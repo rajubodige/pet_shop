@@ -13,7 +13,7 @@ pipeline {
         }
         stage (deploy) {
             steps {
-               deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://54.249.110.156:8081/')], contextPath: 'raju', war: '**/*.war'
+              deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://13.201.15.128:8081/')], contextPath: 'vamshi', war: '**/*.war'
             }
         }
     }
